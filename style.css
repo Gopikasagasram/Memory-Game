@@ -1,0 +1,71 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body {
+    background: url(background.jpg) no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: bisque;
+    margin: 20px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(6,110px);
+    column-gap: 30px;
+    row-gap: 20px;
+}
+
+#gameboard div{
+    height: 150px;
+    width:120px;
+    cursor: pointer;
+}
+
+.displaycards {
+    background-color: rgb(103, 225, 223);
+    border: 5px blue solid;
+    border-radius: 10px;
+    
+}
+
+.showimage {
+    font-size: 20px;
+    border: 2px black solid;
+    border-radius: 10px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    font-size: 60px;
+}
+
+.matched {
+    border: none;
+    background-color: transparent;
+    user-select: none;
+    cursor:auto;
+}
+
+.matchedcount {
+    font-size: 100px;
+    font-style: italic;
+    margin: 100px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
